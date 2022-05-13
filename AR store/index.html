@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3D Object</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    
+    <div id="container">
+      <!-- Navbar container -->
+      <div id="navbar">
+        <div id="logo">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+        <ul>
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    
+
+      <!-- An aside -->
+      <!-- This is for holding the 3D object -->
+      <div class="aSide">
+        <!-- 3D objsect -->
+        <!-- This inserts the 3D object inside the aside container -->
+        <model-viewer
+          bounds="tight"
+          enable-pan
+          src="assets/Table.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="poster.webp"
+          shadow-intensity="1"
+          auto-rotate
+          exposure="0.28"
+          camera-orbit="124.1deg 49.56deg auto"
+          id="green_table"
+        >
+          <button
+            class="Hotspot"
+            slot="hotspot-3"
+            data-position="5.530884749198468m 30.691111979768834m -31.36146794534784m"
+            data-normal="0.21414799094112674m 1.312419004275238e-7m -0.9768012274643506m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              Enamal top keeps table clean
+            </div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-4"
+            data-position="4.192272975599525m -0.17790678301080254m -27.78459961471044m"
+            data-normal="0.9923933010284504m -1.93211702074721e-7m 0.12310782295946233m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">Metal Leg keeps table sturdy</div>
+          </button>
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">View in your space</button>
+          <div id="ar-prompt">
+            <!-- <img src="https://modelviewer.dev/shared-assets/icons/hand.png" /> -->
+          </div>
+        </model-viewer>
+        <div class="content">
+          <h2>Green Enamal Cofee Table</h2>
+          <p>This timeless classic will match any home!</p>
+          <button>Shop</button>
+        </div>
+
+       
+      </div>
+      <div class="aSide">
+        <model-viewer
+          bounds="tight"
+          enable-pan
+          src="Lamp.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          environment-image="neutral"
+          poster="poster.webp"
+          shadow-intensity="1"
+          exposure="0.54"
+          auto-rotate
+          camera-orbit="-48.17deg 29.07deg auto"
+        >
+          <button
+            class="Hotspot"
+            slot="hotspot-1"
+            data-position="-495.5177944496054m 1210.1499950286752m 460.8171005610662m"
+            data-normal="-0.2652576036577001m -0.4861853579739296m 0.8326236853426263m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              Flexible Top to reach any angle
+            </div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-2"
+            data-position="-496.93895397530423m 41.02505348812065m 340.9946905378382m"
+            data-normal="0m 0.9999999999999911m 1.343588610839583e-7m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              Sturdy Base keeps the lamp from falling
+            </div>
+          </button>
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">View in your space</button>
+          <div id="ar-prompt">
+          </div>
+        </model-viewer>
+
+        <div class="content">
+          <h2>Red Lamp with Flexible Head</h2>
+          <p>This light will keep your workspace bright all day long!</p>
+          <button>Shop</button>
+        </div>
+      </div>
+
+
+
+      <div class="aSide">
+        <model-viewer
+          bounds="tight"
+          enable-pan
+          src="sofa.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          environment-image="neutral"
+          poster="poster.webp"
+          shadow-intensity="1"
+          exposure="0.92"
+        >
+          <button
+            class="Hotspot"
+            slot="hotspot-1"
+            data-position="48.51613187711388m 676.2760110833767m 205.28452598645075m"
+            data-normal="-0.47151198357316093m 0.37906361161984187m 0.7962331490792286m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              Comes with comfy Pillows!
+            </div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-2"
+            data-position="-376.4639582368433m 296.8745283233219m 690.8402323118743m"
+            data-normal="-0.9854418116527817m -2.2842759244312688e-8m 0.17001304610671325m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              Can be split into two "love seats"
+            </div>
+          </button>
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">View in your space</button>
+          <div id="ar-prompt">
+          </div>
+        </model-viewer>
+        <div class="content">
+          <h2>Orange Sofa</h2>
+          <p>This warm and cozy sofa will keep your butt and wallet happy!</p>
+          <button>Shop</button>
+        </div>
+      </div> 
+
+      
+      <!-- Social media icons -->
+      <!-- This is for holding some company's social media icons and related links -->
+      <div id="icons">
+        <div id="iconsLogo">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </body>
+</html>
